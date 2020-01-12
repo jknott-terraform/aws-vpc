@@ -2,10 +2,11 @@
 
 
 terraform {
-  backend "s3"
+  backend "s3" {
   bucket = "engineering-remote-state-development"
   key    = "terraform.tfstate"
   region = "us-east-1"
+ }
 }
 
 
